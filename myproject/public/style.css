@@ -93,3 +93,56 @@ nav ul {
     justify-content: flex-end;
   }
 }
+
+/* HvA-Meter */
+.meter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  padding: 1rem 2rem;
+  background: var(--blue);
+  color: #fff;
+
+  @media (min-width: 810px) {
+    flex-wrap: nowrap;
+    padding: 1rem 60px;
+  }
+}
+
+.meter-score { 
+    font-size: 1.6rem; 
+}
+
+.meter-score strong { 
+    font-size: 2.2rem; 
+}
+
+.votes-button,
+.vote-button {
+  font: inherit;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .5rem 1.25rem;
+  cursor: pointer;
+}
+
+.votes-button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.vote-button {
+  background: #fff;
+  color: var(--blue);
+  border: 1px solid #fff;
+}
+
+.meter-question {
+  font-size: 1.3rem;
+
+  @media (min-width: 810px) {
+    margin-left: auto;
+  }
+}
