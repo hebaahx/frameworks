@@ -1,0 +1,25 @@
+:root {
+  --background-color: #ffffff;
+  --blue: #1450d2;
+  --text-color: #0f1b3d;
+}
+
+* { box-sizing: border-box; 
+    margin: 0; 
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
