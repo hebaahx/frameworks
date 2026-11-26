@@ -161,14 +161,26 @@ nav ul {
 }
 
 .card {
+  position: relative;
   display: flex;
   align-items: flex-end;
   min-height: 14rem;
-  background: var(--blue);
+  overflow: hidden;
   color: #fff;
+  font-weight: bold;
+}
+
+.card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card a {
+  position: relative;
+  z-index: 1;
   display: block;
   padding: 1.5rem;
   width: 100%;
