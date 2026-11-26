@@ -115,7 +115,7 @@ nav ul {
 }
 
 .meter-score strong { 
-    font-size: 2.2rem; 
+    font-size: 2rem; 
 }
 
 .votes-button,
@@ -144,5 +144,43 @@ nav ul {
 
   @media (min-width: 810px) {
     margin-left: auto;
+  }
+}
+
+/* articles */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+
+  @media (min-width: 810px) {
+    grid-template-columns: 2fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 34rem;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  min-height: 14rem;
+  background: var(--blue);
+  color: #fff;
+}
+
+.card a {
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.card-large {
+  @media (min-width: 810px) {
+    grid-row: 1 / 3;
   }
 }
