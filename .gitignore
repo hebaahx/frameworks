@@ -1,0 +1,12 @@
+# Misc
+*.log
+npm-debug.*
+.DS_Store
+.env
+.cache
+
+# Node modules and output
+node_modules
+dist
+_site
+.enhance
