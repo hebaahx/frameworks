@@ -172,3 +172,53 @@ nav ul {
     margin-left: auto;
   }
 }
+
+/* articles */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+
+  @media (min-width: 810px) {
+    grid-template-columns: 2fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 34rem;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 14rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+.card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card a {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card-large {
+  @media (min-width: 810px) {
+    grid-row: 1 / 3;
+  }
+}

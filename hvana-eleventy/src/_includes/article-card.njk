@@ -1,0 +1,8 @@
+{% macro articleCard(heading, image, alt, extraClass) %}
+  <article class="card {{ extraClass }}">
+    <img src="{{ image }}" alt="{{ alt }}">
+    <a href="#">
+      <h2>{{ heading }}</h2>
+    </a>
+  </article>
+{% endmacro %}

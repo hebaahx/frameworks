@@ -3,5 +3,13 @@ layout: layout.njk
 title: HvanA
 ---
 
+{% from "article-card.njk" import articleCard %}
+
 {% include "site-header.njk" %}
 {% include "hva-meter.njk" %}
+
+<main class="featured">
+  {{ articleCard("Steeds meer van mijn studie gebeurt achter een scherm.", "/img/card-1.jpg", "Studenten voor een gebouw", "card-large") }}
+  {{ articleCard("Steeds meer van mijn studie gebeurt achter een scherm.", "/img/card-2.jpg", "Portret van een studente", "") }}
+  {{ articleCard("Steeds meer van mijn studie gebeurt achter een scherm.", "/img/card-3.jpg", "Zaal met presentatie", "") }}
+</main>
